@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="129" width="320" height="439"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zjV-bj-ouD">
-                                <rect key="frame" x="36" y="149" width="248" height="399"/>
+                                <rect key="frame" x="26" y="139" width="268" height="419"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eOp-Xk-40U">
                                     <size key="itemSize" width="105" height="105"/>
@@ -94,19 +94,22 @@
                             <constraint firstItem="FM7-Lg-dvz" firstAttribute="top" secondItem="Pw6-tX-w89" secondAttribute="bottom" id="4XW-u3-gsJ"/>
                             <constraint firstItem="gQK-LP-4n4" firstAttribute="top" secondItem="FM7-Lg-dvz" secondAttribute="bottom" id="8Ey-xv-n80"/>
                             <constraint firstItem="Pw6-tX-w89" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9zL-6B-84e"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zjV-bj-ouD" secondAttribute="trailing" constant="20" id="GYP-fU-7hR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zjV-bj-ouD" secondAttribute="trailing" constant="10" id="GYP-fU-7hR"/>
                             <constraint firstItem="FM7-Lg-dvz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NMA-5c-GnN"/>
-                            <constraint firstItem="zjV-bj-ouD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Nqi-WW-sk2"/>
-                            <constraint firstItem="zjV-bj-ouD" firstAttribute="top" secondItem="FM7-Lg-dvz" secondAttribute="bottom" constant="20" id="Tga-G7-jqT"/>
+                            <constraint firstItem="zjV-bj-ouD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Nqi-WW-sk2"/>
+                            <constraint firstItem="zjV-bj-ouD" firstAttribute="top" secondItem="FM7-Lg-dvz" secondAttribute="bottom" constant="10" id="Tga-G7-jqT"/>
                             <constraint firstItem="gQK-LP-4n4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V7I-sO-zu5"/>
                             <constraint firstAttribute="trailing" secondItem="gQK-LP-4n4" secondAttribute="trailing" id="b8E-RN-zG6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gQK-LP-4n4" secondAttribute="bottom" id="dLW-1n-8g0"/>
                             <constraint firstAttribute="trailing" secondItem="FM7-Lg-dvz" secondAttribute="trailing" id="eOU-zh-Kk1"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zjV-bj-ouD" secondAttribute="bottom" constant="20" id="g8j-ba-FI4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zjV-bj-ouD" secondAttribute="bottom" constant="10" id="g8j-ba-FI4"/>
                             <constraint firstAttribute="trailing" secondItem="Pw6-tX-w89" secondAttribute="trailing" id="hPy-L9-fsb"/>
                             <constraint firstItem="Pw6-tX-w89" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jfz-KJ-GQ1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collection" destination="zjV-bj-ouD" id="ib3-jp-AAC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
