@@ -49,14 +49,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="okc-Da-334">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="okc-Da-334" customClass="PokeCell" customModule="Pokedex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="3Jw-Db-LUR">
+                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="3Jw-Db-LUR">
                                                     <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -81,6 +81,10 @@
                                             <constraint firstAttribute="trailing" secondItem="4Fi-jP-K4v" secondAttribute="trailing" id="vEI-XA-anT"/>
                                             <constraint firstItem="3Jw-Db-LUR" firstAttribute="leading" secondItem="okc-Da-334" secondAttribute="leading" id="ycr-nm-d1P"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="4Fi-jP-K4v" id="kw4-TN-e7i"/>
+                                            <outlet property="thumbImg" destination="3Jw-Db-LUR" id="xxB-9d-9gV"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
