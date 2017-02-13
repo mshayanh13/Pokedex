@@ -98,6 +98,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         view.endEditing(true)
         
+        let pokemon = (inSearchMode ? filteredPokemons[indexPath.row] : pokemons[indexPath.row])
+        performSegue(withIdentifier: "PokemonDetailVC", sender: pokemon)
+        
     }
     
     //number of items in section
@@ -157,6 +160,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             collection.reloadData()
         }
         
+    }
+    
+    
+    //prepare for the seguq
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PokemonDetailVC" {
+            if let detailsVC = segue.destination as? PokemonDetailVC {
+                if let pokemon = sender as? Pokemon {
+                    detailsVC.pokemon = pokemon
+                }
+            }
+        }
     }
 }
 
