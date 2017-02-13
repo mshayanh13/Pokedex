@@ -15,6 +15,7 @@
 		1019E39A1E4FDF89002A4592 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1019E3991E4FDF89002A4592 /* pokemon.csv */; };
 		1019E39F1E4FDFF7002A4592 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1019E39E1E4FDFF7002A4592 /* Pokemon.swift */; };
 		1019E3A21E512452002A4592 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1019E3A11E512452002A4592 /* PokeCell.swift */; };
+		1019E3A41E512B9B002A4592 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1019E3A31E512B9B002A4592 /* csv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1019E3991E4FDF89002A4592 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		1019E39E1E4FDFF7002A4592 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		1019E3A11E512452002A4592 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		1019E3A31E512B9B002A4592 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +66,8 @@
 				1019E39C1E4FDFE9002A4592 /* View */,
 				1019E39B1E4FDFE3002A4592 /* Model */,
 				1019E3851E4FDB02002A4592 /* AppDelegate.swift */,
-				1019E3871E4FDB02002A4592 /* ViewController.swift */,
 				1019E3991E4FDF89002A4592 /* pokemon.csv */,
+				1019E3A31E512B9B002A4592 /* csv.swift */,
 				1019E3891E4FDB02002A4592 /* Main.storyboard */,
 				1019E38C1E4FDB02002A4592 /* Assets.xcassets */,
 				1019E38E1E4FDB02002A4592 /* LaunchScreen.storyboard */,
@@ -93,6 +95,7 @@
 		1019E39D1E4FDFED002A4592 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1019E3871E4FDB02002A4592 /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 				TargetAttributes = {
 					1019E3811E4FDB02002A4592 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -174,6 +178,7 @@
 				1019E3881E4FDB02002A4592 /* ViewController.swift in Sources */,
 				1019E3861E4FDB02002A4592 /* AppDelegate.swift in Sources */,
 				1019E39F1E4FDFF7002A4592 /* Pokemon.swift in Sources */,
+				1019E3A41E512B9B002A4592 /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
